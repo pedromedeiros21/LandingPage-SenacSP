@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openForm() {
+            document.getElementById("popup").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("popup").style.display = "none";
+        } 
+    </script>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Aulas de idiomas</h1>
+        <h2>Inglês</h2>
+        <h2>Espanhol</h2>
+        <h2>Alemão</h2>
+    </header>
+    <aside>
+        <div class="image-container">
+            <h3>Tabela de preços</h3>
+            <p>25 minutos: R$20,00</p>
+            <p>30 minutos: R$40,00</p>
+            <p>1 hora: R$90,00</p>
+            <p id="title-lista">A aula pode ser realizada presencialmente,<br>ou pelos seguintes aplicativos:</p>
+            <ul class="lista">
+                <li>Whatsapp</li>
+                <li>Discord</li>
+                <li>Skype</li>
+                <li>Teams</li>
+                <li>Zoom</li>
+                <li>Meet</li>
+            </ul>
+            <p id="fim-precos">Para mais informações, acessar contato</p>
+        </div>
+    </aside>
+    <main>
+        <div class="main-container">
+            <ul>
+                <li>Há mais de 10 anos ensinando idiomas</li>
+                <li>Inglês com 40% de desconto na primeira aula!</li>
+                <li>Ajudamos você a conquistar as principais certificações</li>
+                <li>Ensinamos até o nível C1 em todos os idiomas</li>
+                <li>Preparamos você para intercâmbios</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <button class="button-contato" onclick="openForm()">Contato</button>
+
+        <div class="formulario" id="popup">
+            <form action="" class="form-container">
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Coloque seu nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" placeholder="Coloque o E-mail" name="email" required>
+
+                <label for="tel">Telefone:</label>
+                <input type="tel" placeholder="Coloque o número de telefone" name="tel" required>
+
+                <button type="submit" class="btn">Enviar</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Fechar</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
